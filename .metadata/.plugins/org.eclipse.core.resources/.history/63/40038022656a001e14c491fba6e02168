@@ -1,0 +1,20 @@
+package myproject;
+
+
+
+  
+
+public class TC_1 {
+@Test
+      
+	public void login_test() {
+		// TODO Auto-generated method stub
+        WebDriverManager.firefoxdriver().setup();
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.google.com/");
+        Assert.assertEquals(driver.getTitle(),"Google");
+        driver.close();
+	}
+
+}
